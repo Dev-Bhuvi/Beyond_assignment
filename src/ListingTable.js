@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function ListingTable({ listings }) {
-  const itemsPerPage = 1;
+  const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(listings.length / itemsPerPage);
